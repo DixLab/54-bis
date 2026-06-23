@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WooCommerce Diritto di Recesso
- * Plugin URI:  https://example.com/woocommerce-diritto-recesso
+ * Plugin URI:  https://github.com/DixLab/54-bis
  * Description: Gestione del diritto di recesso secondo la normativa italiana (art. 54-bis Codice del Consumo) per WooCommerce. Fornisce un modulo frontend per i clienti, area amministrativa, generazione PDF del modulo di recesso e notifiche email.
  * Version:     1.0.0
  * Author:      DixLab
