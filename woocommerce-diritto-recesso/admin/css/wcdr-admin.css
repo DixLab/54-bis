@@ -1,0 +1,94 @@
+/**
+ * Stili dell'area amministrativa del plugin.
+ *
+ * @package WooCommerce_Diritto_Recesso
+ */
+
+.wcdr-admin .wcdr-ricerca-form {
+	margin: 12px 0;
+}
+
+/* Badge di stato */
+.wcdr-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 0.82em;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #fff;
+}
+
+.wcdr-badge-in_attesa {
+	background: #d68910;
+}
+
+.wcdr-badge-approvata {
+	background: #2980b9;
+}
+
+.wcdr-badge-rifiutata {
+	background: #c0392b;
+}
+
+.wcdr-badge-completata {
+	background: #27ae60;
+}
+
+/* Griglia del dettaglio */
+.wcdr-dettaglio-griglia {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.wcdr-dettaglio-principale {
+	flex: 2;
+	min-width: 320px;
+}
+
+.wcdr-dettaglio-laterale {
+	flex: 1;
+	min-width: 260px;
+}
+
+.wcdr-box {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 6px;
+	padding: 16px 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wcdr-box h2 {
+	margin-top: 0;
+	font-size: 1.1em;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.wcdr-tabella-dettaglio {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.wcdr-tabella-dettaglio th,
+.wcdr-tabella-dettaglio td {
+	text-align: left;
+	padding: 10px 8px;
+	border-bottom: 1px solid #f0f0f0;
+	vertical-align: top;
+}
+
+.wcdr-tabella-dettaglio th {
+	width: 38%;
+	color: #555;
+	font-weight: 600;
+}
+
+.wcdr-nota-avviso {
+	color: #c0392b;
+	font-style: italic;
+}
