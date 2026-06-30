@@ -120,11 +120,11 @@ Da qui puoi:
 | Nuova richiesta inviata                 | Amministratore |
 | Cambio di stato della richiesta         | Cliente        |
 
-Le email vengono inviate tramite la funzione standard `wp_mail()` di WordPress, in formato HTML. L'indirizzo del mittente corrisponde a quello configurato in **Impostazioni → Generali** di WordPress. La notifica di nuova richiesta viene inviata sempre a **info@viridiasrl.it**, indipendentemente da cosa sia impostato come email amministratore in WordPress.
+Le email vengono inviate tramite la funzione standard `wp_mail()` di WordPress, in formato HTML. L'indirizzo del mittente corrisponde a quello configurato in **Impostazioni → Generali** di WordPress. La notifica di nuova richiesta viene inviata sempre a **mail@mail.it**, indipendentemente da cosa sia impostato come email amministratore in WordPress.
 
 ### Cambiare l'indirizzo di destinazione delle notifiche admin
 
-Se su un determinato sito vuoi che le notifiche di nuova richiesta arrivino a un indirizzo **diverso** da `info@viridiasrl.it` (ad esempio per un altro progetto/cliente), puoi sovrascriverlo senza modificare il codice del plugin definendo la costante `WCDR_ADMIN_EMAIL` nel file `wp-config.php` di quel sito.
+Se su un determinato sito vuoi che le notifiche di nuova richiesta arrivino a un indirizzo **diverso** da `*mail@mail.it` (ad esempio per un altro progetto/cliente), puoi sovrascriverlo senza modificare il codice del plugin definendo la costante `WCDR_ADMIN_EMAIL` nel file `wp-config.php` di quel sito.
 
 **Come fare:**
 
@@ -140,12 +140,12 @@ Se su un determinato sito vuoi che le notifiche di nuova richiesta arrivino a un
    sostituendo `altra-email@esempio.it` con l'indirizzo desiderato.
 4. Salva il file.
 
-Da questo momento, su quel sito, tutte le notifiche di nuova richiesta verranno inviate all'indirizzo specificato invece che a `info@viridiasrl.it`. Non è necessario alcun altro intervento: la modifica ha effetto immediato, senza bisogno di riattivare il plugin.
+Da questo momento, su quel sito, tutte le notifiche di nuova richiesta verranno inviate all'indirizzo specificato invece che a `*mail@mail.it`. Non è necessario alcun altro intervento: la modifica ha effetto immediato, senza bisogno di riattivare il plugin.
 
 **Note:**
 
-- La costante è **opzionale**: se non viene definita, il plugin usa automaticamente `info@viridiasrl.it` come destinatario predefinito.
-- Se viene definita con un valore che **non** è un indirizzo email valido, il plugin la ignora e ricade comunque su `info@viridiasrl.it`.
+- La costante è **opzionale**: se non viene definita, il plugin usa automaticamente `*mail@mail.it` come destinatario predefinito.
+- Se viene definita con un valore che **non** è un indirizzo email valido, il plugin la ignora e ricade comunque su `*mail@mail.it`.
 - La costante va definita **una sola volta per sito** (non per singola richiesta): è pensata per installazioni del plugin su siti/progetti diversi che necessitano di un destinatario diverso da quello predefinito.
 - Questa impostazione riguarda **solo** la notifica di nuova richiesta inviata all'amministratore; l'email di conferma al cliente continua ad essere inviata all'indirizzo che il cliente stesso ha indicato nel modulo.
 
